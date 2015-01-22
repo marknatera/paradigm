@@ -27,6 +27,7 @@ gem 'font-awesome-rails', '~> 4.2.0.0'
 gem 'devise', '~> 3.4.1'
 gem 'carrierwave'
 gem 'mini_magick', '3.8.0'
+gem 'figaro'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -12,7 +12,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= image_tag(@client.picture_url, :width => 600) if @client.picture.present? %>
+  <%= image_tag(@client.picture_url, :width => 500) if @client.picture.present? %>
 </p>
 
 <%= link_to 'Edit', edit_client_path(@client) %> |
