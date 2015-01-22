@@ -12,7 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
 //= require bootstrap.min
+//= require modernizr.custom
+//= require page-transitions
+//= require easing.min
+//= require jquery.svg.js
+//= require jquery.svganim
+//= require jquery.parallax.min
+//= require startup-kit
+//= require custom

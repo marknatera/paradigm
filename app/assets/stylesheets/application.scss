@@ -1,8 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "flat-ui";
+@import "icon-font";
+@import "animations";
+@import "jquery.bxslider";
 @import "font-awesome";
-
-body { padding-top: 100px; }
-footer { margin-top: 100px; }
-table, td, th { vertical-align: middle; border: none; }
-th { border-bottom: 1px solid #DDD; }
+@import "header";
+@import "content";
+@import "blog";
+@import "contact";
+@import "projects";
+@import "footer";
