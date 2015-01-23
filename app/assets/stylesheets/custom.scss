@@ -1,3 +1,4 @@
+// All pages custom scss located here
 // Home Page
 .header-16-sub-home {
   @extend .header-16-sub;
@@ -28,13 +29,18 @@
     color: #000000;
     padding-bottom:20px;
   }
+  .top{
+    padding-bottom: 50px;
+  }
+  .bottom {
+    padding-top: 140px;
+  }
   p {
     color: #838383;
     font-family: 'Lato', sans-serif;
     font-weight:400;
     padding-bottom:40px;
   }
-
 }
 
 .content-20-home {
@@ -57,6 +63,21 @@
     padding-bottom: 45px;
     font-size: 20px;
     text-decoration: underline;
+  }
+}
+
+.content-23-home {
+  @extend .content-23;
+  .background {
+    background-image:url(image-path("blog.jpg"));
+    opacity: 1;
+    background-attachment: fixed;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #ffffff;
+    padding-bottom:40px;
   }
 }
 
@@ -87,5 +108,77 @@
     background: white;
     border: white 3px solid;
     color: #000000 !important;
+  }
+}
+
+// Footer
+
+.footer-13 {
+  .col-md-2 {
+    .overlay-facebook {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      &:hover {
+        background: #2a6496;
+        a {
+          color: #ffffff;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .overlay-twitter {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      &:hover {
+        background: #428bca;
+        a {
+          color: #ffffff;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .overlay-youtube {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      &:hover {
+        background: #AF1300;
+        a {
+          color: #ffffff;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .overlay-linkedin {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      &:hover {
+        background: #007BB6;
+        a {
+          color: #ffffff;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .overlay-mogo {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      &:hover {
+        background: #DEA74A;
+        a {
+          color: #ffffff;
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
   }
 }

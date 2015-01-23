@@ -18,7 +18,7 @@
 <section class="content-32-home">
   <div class="container">
     <div class="row">
-      <div class="col-sm-10 col-sm-offset-1">
+      <div class="slide-bottom col-sm-10 col-sm-offset-1">
         <h1>PARADIGM SPORTS MANAGEMENT</h1>
         <p>"Together Everyone Achieves More" - a mantra taught throughout sports and what we at Paradigm Sports Management emulate in our operations and management. Paradigm Sports Management breaks the conventional approach to offer a unique level of service that emulates our clients’ discipline, passion, and determination on their respective playing field.</p>
         <button class="btn btn-inverse-home">Learn More</button>
@@ -36,6 +36,9 @@
       </div>
       <div class="row">
         <div class="col-sm-6"></div>
+        <div class="slide-right">
+
+
         <div class="col-sm-6 features">
           <h1>SPORTS MANAGEMENT<br>SERVICES</h1>
           <div class="row">
@@ -47,6 +50,7 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
   </div>
 </section>
@@ -55,59 +59,43 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-10 col-sm-offset-1">
-        <h1>NEW 2015 FAMILY MEMBERS</h1>
+        <h1 class="top">NEW 2015 FAMILY MEMBERS</h1>
       </div>
     </div>
   </div>
   <div class="fluid-container">
       <div class="row">
-        <div class="col-xs-6 col-sm-3">
-          <%= image_tag 'family2.jpg', class: 'img-responsive' %>
-        </div>
-        <div class="col-xs-6 col-sm-3">
+        <div class="col-xs-6 col-md-4" style="padding-left: 0px;padding-right: 0px;">
           <%= image_tag 'family1.jpg', class: 'img-responsive' %>
         </div>
-        <div class="col-xs-6 col-sm-3">
-          <%= image_tag 'family3.jpg', class: 'img-responsive' %>
+        <div class="col-xs-6 col-md-4" style="padding-left: 0px;padding-right: 0px;">
+          <%= image_tag 'family2.jpg', class: 'img-responsive' %>
         </div>
-        <div class="col-xs-6 col-sm-3">
+        <div class="col-xs-6 col-md-4" style="padding-left: 0px;padding-right: 0px;">
           <%= image_tag 'family3.jpg', class: 'img-responsive' %>
         </div>
       </div>
   </div>
-  <button class="btn btn-inverse-home">Learn More</button>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <h1 class="bottom">PARADIGM SPORTS CLIENTS LIST</h1>
+        <button class="btn btn-inverse-home">Learn More</button>
+      </div>
+    </div>
+  </div>
 </section>
 
-<script>
-(function($) {
-  $('.header-16-sub-home').each(function() {
-    if (! isMobile.any() ) {
-      $(this).parallax('50%', 0.3, true);
-    } else {
-      $(this).css('background-attachment', 'initial')
-    }
-  })
-}(jQuery));
-</script>
-<script>
-(function($) {
-  $('.content-20-home').each(function() {
-    if (! isMobile.any() ) {
-      $(this).parallax('50%', 0.3, true);
-    } else {
-      $(this).css('background-attachment', 'initial')
-    }
-  })
-}(jQuery));
-</script>
-<%# <script>
-(function($) {
-  $('.content-23').each(function() {
-    if (! isMobile.any() ) {
-      $(this).parallax('50%', 0.3, true);
-    } else {
-      $(this).css('background-attachment', 'initial')
-    }
-  })
-}(jQuery));
-</script> %>
+<section class="content-23-home">
+  <div class="background">&nbsp;</div>
+  <div class="holder v-center">
+    <div>
+      <div class="container">
+        <div class="slide-top hero-unit">
+          <h2>WHAT OUR CLIENTS ARE SAYING</h2>
+          <%= link_to 'Visit Blog', root_path, class:'btn btn-inverse-service' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

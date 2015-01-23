@@ -2,6 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "component";
 @import "flat-ui";
 @import "icon-font";
 @import "animations";
@@ -15,6 +16,19 @@
 @import "footer";
 @import "custom";
 
+#logotop {
+  display: none;
+}
+
+#navbkg {
+  display: none;
+  background: black;
+  width: 100%;
+  height: 75px;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
 $push-menu-background: black;
 $push-menu-item-color: black;
 $push-menu-item-color2: darkred;
@@ -44,7 +58,7 @@ $push-menu-item-color2: darkred;
 }
 .hamburger{
   img{
-    height: 42px;
+    height: 45px;
   }
   &:before {
     content: "MENU  ";
@@ -95,7 +109,7 @@ $push-menu-item-color2: darkred;
 /* Orientation-dependent styles for the content of the menu */
 
 .spmenu-vertical {
-  width: 240px;
+  width: 300px;
   height: 100%;
   top: 72px;
   z-index: 1000;
@@ -108,11 +122,11 @@ $push-menu-item-color2: darkred;
 /* Vertical menu that slides from the left or right */
 
 .spmenu-left {
-  left: -240px;
+  left: -300px;
 }
 
 .spmenu-right {
-  right: -240px;
+  right: -300px;
 }
 
 .spmenu-left.spmenu-open {
@@ -121,6 +135,8 @@ $push-menu-item-color2: darkred;
 
 .spmenu-right.spmenu-open {
   right: 0px;
+  top: 0;
+  padding-top: 72px;
 }
 
 /* Push classes applied to the body */
@@ -132,11 +148,11 @@ $push-menu-item-color2: darkred;
 }
 
 .spmenu-push-toright {
-  left: 240px;
+  left: 300px;
 }
 
 .spmenu-push-toleft {
-  left: -240px;
+  left: -300px;
 }
 
 /* Transitions */

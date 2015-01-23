@@ -25,6 +25,8 @@
 //= require jquery.parallax.min
 //= require startup-kit
 //= require custom
+//= require jquery.fadethis
+
 
 var menuRight = $('#spmenu-s2'),
     showRightPush = $('#showRightPush, .spmenu-overlay'),
@@ -37,4 +39,3 @@ showRightPush.on('click', function(e){
     $(menuRight).toggleClass('spmenu-open');
     $('.spmenu-overlay').toggleClass('active');
 });
-
