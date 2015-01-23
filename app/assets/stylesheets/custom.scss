@@ -6,13 +6,29 @@
     opacity: 1;
     background-attachment: fixed;
   }
-  h3 {
+  h2 {
     font-weight: 300;
     font-family: 'Lato', sans-serif;
     color: #ffffff;
     margin-bottom: 50px;
     letter-spacing: 3px;
     font-size: 25px;
+    border: none;
+  }
+
+}
+
+.content-32-home{
+  @extend .content-32;
+  h1 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #000000;
+  }
+  p {
+    color: #838383;
+    font-family: 'Lato', sans-serif;
+    font-weight:400;
   }
 
 }
@@ -31,6 +47,21 @@
   p {
     color: #ffffff;
 
+  }
+}
+.btn-inverse-home {
+  @extend .btn-inverse;
+  margin: 0 auto;
+  display: block;
+  background: transparent;
+  border: #838383 3px solid;
+  border-radius: 0px;
+  color: #838383 !important;
+  width: 200px;
+  &:hover {
+    background: black;
+    border: #000000 3px solid;
+    color: #ffffff !important;
   }
 }
 
