@@ -14,3 +14,158 @@
 @import "projects";
 @import "footer";
 @import "custom";
+
+$push-menu-background: black;
+$push-menu-item-color: black;
+$push-menu-item-color2: darkred;
+
+// Hacking the Header
+
+.navbar.navbar-fixed-top{
+    max-width: none !important;
+  }
+.navbar-container{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+
+.header-1{
+  .navbar{
+    .nav{
+      > li > a {
+        padding: 15px 21px;
+        &:hover, &:focus, &:active {
+        color: darkred;
+        }
+      }
+    }
+  }
+}
+.hamburger{
+  img{
+    height: 42px;
+  }
+  &:before {
+    content: "MENU  ";
+  }
+}
+
+/* General styles for all menus */
+.spmenu {
+  background: $push-menu-background;
+  position: fixed;
+}// for overlay when menu is click
+
+.spmenu-overlay.active{
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.spmenu h3 {
+  color: #afdefa;
+  font-size: 1.9em;
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+  background: #0d77b6;
+}
+
+.spmenu a {
+  display: block;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+.spmenu a:hover {
+  background: $push-menu-item-color2;
+  color: black;
+}
+
+.spmenu a:active {
+  background:$push-menu-item-color2;
+  color: black;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.spmenu-vertical {
+  width: 240px;
+  height: 100%;
+  top: 72px;
+  z-index: 1000;
+  a {
+//    border-bottom: 1px solid #258ecd;
+    padding: 1em;
+  }
+}
+
+/* Vertical menu that slides from the left or right */
+
+.spmenu-left {
+  left: -240px;
+}
+
+.spmenu-right {
+  right: -240px;
+}
+
+.spmenu-left.spmenu-open {
+  left: 0px;
+}
+
+.spmenu-right.spmenu-open {
+  right: 0px;
+}
+
+/* Push classes applied to the body */
+
+.spmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+.spmenu-push-toright {
+  left: 240px;
+}
+
+.spmenu-push-toleft {
+  left: -240px;
+}
+
+/* Transitions */
+
+.spmenu,
+.spmenu-push {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* Example media queries */
+
+@media screen and (max-height: 26.375em){
+
+  .spmenu-vertical {
+    font-size: 90%;
+    width: 190px;
+  }
+
+  .spmenu-push-toleft {
+    left: -190px;
+  }
+
+  .spmenu-right {
+    right: -190px;
+  }
+
+  .spmenu-push-toright {
+    left: 190px;
+  }
+}

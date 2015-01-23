@@ -3,15 +3,62 @@
 <head>
   <title>Paradigm</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+  <header class="header-1">
+    <div class="navbar navbar-fixed-top bg-black" role="navigation">
+      <div class="container">
+        <div class="navbar-container">
+          <div class="pull-left" id="logotop">
+            <%= link_to image_tag('logo-sm.png'), root_path, class:'navbar-brand' %>
+          </div>
+          <ul class="nav navbar-nav pull-right">
+            <li>
+              <a href="#" id="showRightPush">
+                <span class="hamburger">
+                  <%= image_tag 'hamburger.svg'%>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="spmenu spmenu-vertical spmenu-right" id="spmenu-s2">
+    <%= link_to 'Home', root_path %>
+    <a href="#">Work</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="spmenu-overlay"></div>
+  <div class="page-wrapper spmenu-push">
   <div class="page-wrapper">
 
     <%= yield %>
 
   </div>
+
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+
+  <script>
+//  $(document).ready(function() {
+//    $(window).scroll(function(){
+//      if(document.body.scrollTop > 600)
+//        $('#logotop').fadeIn( "slow", function() { });
+//        else
+//          $('#logotop').fadeOut( "slow", function() { });
+//        });
+//
+//        $('a#scrolltotop').click(function(){
+//          $('html, body').animate({scrollTop:0}, 100);
+//          return false;
+//        });
+//      });
+  </script>
 
 </body>
 </html>
