@@ -28,7 +28,8 @@ var menuRight = $('#spmenu-s2'),
     showRightPush = $('#showRightPush'),
     container = $('.spmenu-push');
 
-$(showRightPush).on('click', function(){
+$(showRightPush).on('click', function(e){
+    e.preventDefault();
     $('this').toggleClass('active');
     $(container).toggleClass('spmenu-push-toleft');
     $(menuRight).toggleClass('spmenu-open');
