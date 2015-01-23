@@ -13,28 +13,13 @@
     <div class="navbar navbar-fixed-top bg-black" role="navigation">
       <div class="navbar-container">
         <div class="navbar-header" id="logotop">
-          <button type="button" class="navbar-toggle"></button>
-          <%= image_tag 'logo-sm.png' %>
+          <%= link_to image_tag('logo-sm.png'), root_path, class:'navbar-brand' %>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav pull-right">
-            <li>
-              <a id="showRightPush" href="#">MENU =</a>
-            </li>
-            <li>
-              <a href="#">HOME</a>
-            </li>
-            <li>
-              <a href="#">WORK</a>
-            </li>
-            <li>
-              <a href="#">BLOG</a>
-            </li>
-            <li>
-              <a href="#">CONTACT</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a id="showRightPush" href="#">MENU =</a>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -43,12 +28,10 @@
 
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
   <h3>Menu</h3>
-  <a href="#">Celery seakale</a>
-  <a href="#">Dulse daikon</a>
-  <a href="#">Zucchini garlic</a>
-  <a href="#">Catsear azuki bean</a>
-  <a href="#">Dandelion bunya</a>
-  <a href="#">Rutabaga</a>
+  <a href="#">Home</a>
+  <a href="#">Work</a>
+  <a href="#">Blog</a>
+  <a href="#">Contact</a>
 </nav>
 <div class="page-wrapper cbp-spmenu-push">
     
