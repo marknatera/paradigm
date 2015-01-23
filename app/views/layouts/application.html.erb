@@ -4,14 +4,28 @@
   <title>Paradigm</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
   <%= csrf_meta_tags %>
 </head>
-<body>
-  <div class="page-wrapper">
+<body class="cbp-spmenu-push">
+
+<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+  <h3>Menu</h3>
+  <a href="#">Celery seakale</a>
+  <a href="#">Dulse daikon</a>
+  <a href="#">Zucchini garlic</a>
+  <a href="#">Catsear azuki bean</a>
+  <a href="#">Dandelion bunya</a>
+  <a href="#">Rutabaga</a>
+</nav>
+
+<div class="page-wrapper">
     
     <%= yield %>
 
   </div>
+
+
   <script>
   $(document).ready(function() {
     $(window).scroll(function(){
@@ -21,7 +35,7 @@
           $('#logotop').fadeOut( "slow", function() { });
         });
 
-        $('a#srolltotop').click(function(){
+        $('a#scrolltotop').click(function(){
           $('html, body').animate({scrollTop:0}, 100);
           return false;
         });
