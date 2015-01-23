@@ -20,18 +20,23 @@
 
 .content-32-home{
   @extend .content-32;
+  background: #ffffff;
+  padding-bottom: 185px;
   h1 {
     font-weight: 700;
     font-size: 50px;
     color: #000000;
+    padding-bottom:20px;
   }
   p {
     color: #838383;
     font-family: 'Lato', sans-serif;
     font-weight:400;
+    padding-bottom:40px;
   }
 
 }
+
 .content-20-home {
   @extend .content-20;
   .background {
@@ -43,12 +48,18 @@
     color: #ffffff;
     font-weight: 700;
     font-size: 50px;
+    padding-bottom: 30px;
   }
   p {
     color: #ffffff;
-
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
+    padding-bottom: 45px;
+    font-size: 20px;
+    text-decoration: underline;
   }
 }
+
 .btn-inverse-home {
   @extend .btn-inverse;
   margin: 0 auto;
