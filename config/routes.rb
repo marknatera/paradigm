@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :messages
 
   root to: 'pages#home'
-  # get '/contact' => 'pages#contact'
+  get '/about' => 'pages#about'
   get '/contact' => 'messages#new', as: 'contact'
   get '/request-done' => 'pages#thanks', as: 'request-done'
   get '/blog' => 'pages#blog'

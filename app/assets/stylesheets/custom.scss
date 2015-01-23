@@ -111,6 +111,56 @@
   }
 }
 
+// About page
+.header-16-sub-about {
+  @extend .header-16-sub;
+  .background {
+    background-image:url(image-path("about-main.jpg"));
+    opacity: 1;
+    background-attachment: fixed;
+  }
+  h2 {
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    font-size: 25px;
+    border: none;
+  }
+  h1 {
+    border: none !important;
+    font-size: 90px !important;
+  }
+}
+
+.content-32-about{
+  @extend .content-32;
+  background: #ffffff;
+  padding-bottom: 0 !important;
+  h1 {
+    font-weight: 700;
+    font-size: 50px;
+    color: #000000;
+    padding-bottom:20px;
+  }
+  .top{
+    padding-bottom: 50px;
+  }
+  .bottom {
+    padding-top: 140px;
+  }
+  p {
+    color: #838383;
+    font-family: 'Lato', sans-serif;
+    font-weight:400;
+    text-align: left !important;
+  }
+}
+
+
+
+
 // Footer
 
 .footer-13 {
