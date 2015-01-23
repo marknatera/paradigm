@@ -13,10 +13,14 @@
 @import "projects";
 @import "footer";
 
-.navbar{
-  .navbar-fixed-top{
-    max-width: none;
+
+// Hacking the Header
+
+.navbar.navbar-fixed-top{
+    max-width: none !important;
   }
+.navbar-container{
+  max-width: 1170px;
 }
 
 
