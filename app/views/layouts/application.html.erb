@@ -6,7 +6,39 @@
 
   <%= csrf_meta_tags %>
 </head>
-<body class="cbp-spmenu-push">
+<body>
+
+<header class="header-1">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="navbar col-sm-12 navbar-fixed-top bg-black" role="navigation">
+        <div class="navbar-header" id="logotop">
+          <button type="button" class="navbar-toggle"></button>
+          <%= image_tag 'logo-sm.png' %>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav pull-right">
+            <li>
+              <a id="showRightPush" href="#">MENU =</a>
+            </li>
+            <li>
+              <a href="#">HOME</a>
+            </li>
+            <li>
+              <a href="#">WORK</a>
+            </li>
+            <li>
+              <a href="#">BLOG</a>
+            </li>
+            <li>
+              <a href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
   <h3>Menu</h3>
@@ -17,8 +49,7 @@
   <a href="#">Dandelion bunya</a>
   <a href="#">Rutabaga</a>
 </nav>
-
-<div class="page-wrapper">
+<div class="page-wrapper cbp-spmenu-push">
     
     <%= yield %>
 
@@ -29,19 +60,19 @@
 
 
   <script>
-  $(document).ready(function() {
-    $(window).scroll(function(){
-      if(document.body.scrollTop > 600)
-        $('#logotop').fadeIn( "slow", function() { });
-        else
-          $('#logotop').fadeOut( "slow", function() { });
-        });
-
-        $('a#scrolltotop').click(function(){
-          $('html, body').animate({scrollTop:0}, 100);
-          return false;
-        });
-      });
+//  $(document).ready(function() {
+//    $(window).scroll(function(){
+//      if(document.body.scrollTop > 600)
+//        $('#logotop').fadeIn( "slow", function() { });
+//        else
+//          $('#logotop').fadeOut( "slow", function() { });
+//        });
+//
+//        $('a#scrolltotop').click(function(){
+//          $('html, body').animate({scrollTop:0}, 100);
+//          return false;
+//        });
+//      });
   </script>
 </body>
 </html>

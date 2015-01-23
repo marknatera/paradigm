@@ -13,6 +13,13 @@
 @import "projects";
 @import "footer";
 
+.navbar{
+  .navbar-fixed-top{
+    max-width: none;
+  }
+}
+
+
 
 /* General styles for all menus */
 .cbp-spmenu {
@@ -50,7 +57,7 @@
 .cbp-spmenu-vertical {
   width: 240px;
   height: 100%;
-  top: 0;
+  top: 82px;
   z-index: 1000;
 }
 
