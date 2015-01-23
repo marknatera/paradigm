@@ -13,6 +13,9 @@
 @import "projects";
 @import "footer";
 
+$push-menu-background: black;
+$push-menu-item-color: black;
+$push-menu-item-color2: darkred;
 
 // Hacking the Header
 
@@ -46,13 +49,19 @@
   }
 }
 
-$push-menu-background: black;
-$push-menu-item-color: black;
-$push-menu-item-color2: darkred;
 /* General styles for all menus */
 .spmenu {
   background: $push-menu-background;
   position: fixed;
+}// for overlay when menu is click
+
+.spmenu-overlay.active{
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 999;
+  cursor: pointer;
 }
 
 .spmenu h3 {
