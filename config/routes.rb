@@ -6,6 +6,12 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
   get '/about' => 'pages#about'
+  get '/services' => 'pages#services'
+  get '/soccer' => 'pages#soccer'
+  get '/basketball' => 'pages#basketball'
+  get '/mma' => 'pages#mma'
+  get '/football' => 'pages#football'
+  get '/sports-marketing' => 'pages#sports', as: 'sports-marketing'
   get '/contact' => 'messages#new', as: 'contact'
   get '/request-done' => 'pages#thanks', as: 'request-done'
   get '/blog' => 'pages#blog'

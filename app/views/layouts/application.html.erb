@@ -1,67 +1,31 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Paradigm</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Paradigm</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
 
-  <header class="header-1">
-    <div class="navbar navbar-fixed-top" role="navigation">
-      <div id="navbkg"></div>
-      <div class="container">
-        <div class="navbar-container">
-          <div class="pull-left" id="logotop">
-            <%= link_to image_tag('logo-sm.png'), root_path, class:'navbar-brand' %>
-          </div>
-          <ul class="nav navbar-nav pull-right">
-            <li>
-              <a href="#" id="showRightPush">
-                <span class="hamburger">
-                  <%= image_tag 'hamburger.svg'%>
-                </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <%= render 'layouts/header' %>
+
+    <nav class="spmenu spmenu-vertical spmenu-right" id="spmenu-s2">
+      <%= render 'layouts/navlinks' %>
+    </nav>
+
+    <div class="spmenu-overlay"></div>
+    <div class="page-wrapper spmenu-push">
+    <div class="page-wrapper">
+
+      <%= yield %>
+
+      <footer>
+        <%= render 'layouts/footer' %>
+      </footer>
+
     </div>
-  </header>
-  <nav class="spmenu spmenu-vertical spmenu-right" id="spmenu-s2">
-    <%= link_to 'Home', root_path %>
-    <%= link_to 'About', about_path %>
-  </nav>
-  <div class="spmenu-overlay"></div>
-  <div class="page-wrapper spmenu-push">
-  <div class="page-wrapper">
 
-    <%= yield %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
-    <footer>
-      <%= render 'layouts/footer' %>
-    </footer>
-
-  </div>
-
-<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-
-
-  <script>
-//  $(document).ready(function() {
-//    $(window).scroll(function(){
-//      if(document.body.scrollTop > 600)
-//        $('#logotop').fadeIn( "slow", function() { });
-//        else
-//          $('#logotop').fadeOut( "slow", function() { });
-//        });
-//
-//        $('a#scrolltotop').click(function(){
-//          $('html, body').animate({scrollTop:0}, 100);
-//          return false;
-//        });
-//      });
-  </script>
-
-</body>
+  </body>
 </html>
