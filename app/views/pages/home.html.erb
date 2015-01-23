@@ -3,7 +3,6 @@
     <div class="row">
       <div class="navbar col-sm-12 navbar-fixed-top bg-black" role="navigation">
         <div class="navbar-header" id="logotop">
-          <button type="button" class="navbar-toggle"></button>
           <%= image_tag 'logo-sm.png' %>
         </div>
         <div class="navbar-collapse collapse">
@@ -31,10 +30,11 @@
   <div id="h-16-pt-main" class="page-transitions pt-perspective">
     <div class="v-center pt-page pt-page-1 pt-page-current">
       <div>
-        <div class="background">&nbsp;</div>
+        <div class="background" id="header-main">&nbsp;</div>
         <div class="container">
-          <div class="hero-unit">
-            <%= image_tag 'logo.png', id: 'logo-main' %>
+          <div class="hero-unit" id="logo-main">
+            <h3>WELCOME TO</h3>
+            <%= image_tag 'logo.png' %>
           </div>
         </div>
       </div>
@@ -85,8 +85,36 @@
     </div>
   </div>
 </section>
-
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-<%= link_to "Clients", clients_path %>
-<%= link_to "Contact", contact_path %>
+<script>
+(function($) {
+  $('.header-16-sub-home').each(function() {
+    if (! isMobile.any() ) {
+      $(this).parallax('50%', 0.3, true);
+    } else {
+      $(this).css('background-attachment', 'initial')
+    }
+  })
+}(jQuery));
+</script>
+<script>
+(function($) {
+  $('.content-20-home').each(function() {
+    if (! isMobile.any() ) {
+      $(this).parallax('50%', 0.3, true);
+    } else {
+      $(this).css('background-attachment', 'initial')
+    }
+  })
+}(jQuery));
+</script>
+<%# <script>
+(function($) {
+  $('.content-23').each(function() {
+    if (! isMobile.any() ) {
+      $(this).parallax('50%', 0.3, true);
+    } else {
+      $(this).css('background-attachment', 'initial')
+    }
+  })
+}(jQuery));
+</script> %>
