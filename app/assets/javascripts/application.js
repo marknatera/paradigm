@@ -24,13 +24,13 @@
 //= require startup-kit
 //= require custom
 
-var menuRight = $('#cbp-spmenu-s2'),
+var menuRight = $('#spmenu-s2'),
     showRightPush = $('#showRightPush'),
-    container = $('.cbp-spmenu-push');
+    container = $('.spmenu-push');
 
 $(showRightPush).on('click', function(){
     $('this').toggleClass('active');
-    $(container).toggleClass('cbp-spmenu-push-toleft');
-    $(menuRight).toggleClass('cbp-spmenu-open');
+    $(container).toggleClass('spmenu-push-toleft');
+    $(menuRight).toggleClass('spmenu-open');
 });
 
