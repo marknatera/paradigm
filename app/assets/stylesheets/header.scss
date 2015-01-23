@@ -4520,7 +4520,7 @@ section * {
   background: #000;
   padding-top: 0;
   padding-bottom: 0;
-  min-height: 550px;
+  min-height: 100vh;
   color: white;
   text-align: center;
   overflow: hidden;
@@ -4855,7 +4855,7 @@ section * {
 }
 @media (max-width: 480px) {
   .header-16-sub {
-    min-height: 480px;
+    min-height: 100vh;
   }
 }
 /**

@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "flat-ui";
@@ -12,6 +13,7 @@
 @import "contact";
 @import "projects";
 @import "footer";
+@import "custom";
 
 $push-menu-background: black;
 $push-menu-item-color: black;
