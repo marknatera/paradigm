@@ -11,7 +11,7 @@ $(window).scroll(function() {
 
 $(document).ready(function() {
   $(window).scroll(function(){
-    if(document.body.scrollTop > 550)
+    if(document.body.scrollTop > 500)
       $('#logotop').fadeIn( "slow", function() { });
       else
         $('#logotop').fadeOut( "slow", function() { });
