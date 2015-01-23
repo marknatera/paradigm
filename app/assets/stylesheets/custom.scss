@@ -1,0 +1,41 @@
+// Home Page
+.header-16-sub-home {
+  @extend .header-16-sub;
+  .background {
+    background-image:url(image-path("home-main.jpg"));
+    opacity: 1;
+    background-attachment: fixed;
+  }
+
+}
+.content-20-home {
+  @extend .content-20;
+  .background {
+    background-image:url(image-path("services.jpg"));
+    opacity: 1;
+    background-attachment: fixed;
+  }
+  h1 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 50px;
+  }
+  p {
+    color: #ffffff;
+
+  }
+}
+
+.btn-inverse-service {
+  @extend .btn-inverse;
+  background: transparent;
+  border: white 3px solid;
+  color: white !important;
+  border-radius: 0px;
+  width: 200px;
+  &:hover {
+    background: white;
+    border: white 3px solid;
+    color: #000000 !important;
+  }
+}

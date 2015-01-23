@@ -15,6 +15,8 @@
 //= require_tree .
 //= require bootstrap-sprockets
 //= require bootstrap.min
+//= require jquery-1.10.2.min
+//= require jquery.scrollTo-1.4.3.1-min
 //= require modernizr.custom
 //= require page-transitions
 //= require easing.min
