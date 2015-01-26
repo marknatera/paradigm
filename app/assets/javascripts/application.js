@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
 //= require bootstrap.min
@@ -26,16 +27,3 @@
 //= require startup-kit
 //= require custom
 //= require jquery.fadethis
-
-
-var menuRight = $('#spmenu-s2'),
-    showRightPush = $('#showRightPush, .spmenu-overlay'),
-    container = $('.spmenu-push');
-
-showRightPush.on('click', function(e){
-    e.preventDefault();
-    $('this').toggleClass('active');
-    $(container).toggleClass('spmenu-push-toleft');
-    $(menuRight).toggleClass('spmenu-open');
-    $('.spmenu-overlay').toggleClass('active');
-});
