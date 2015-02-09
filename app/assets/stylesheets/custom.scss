@@ -1,4 +1,31 @@
 // All pages custom scss located here
+
+//Top Nav
+.menu-tab {
+  position: fixed;
+  top: 13px;
+  right: 20px;
+  color: #ffffff;
+  &:hover, &:focus {
+    color: #ffffff;
+  }
+}
+
+#logotop {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 130px;
+    top: 20px;
+  }
+  @media (max-width: 767px) {
+    width: 130px;
+    top: 20px;
+  }
+}
+
+
 // Home Page
 .header-16-sub-home {
   @extend .header-16-sub;

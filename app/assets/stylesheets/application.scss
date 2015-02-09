@@ -63,6 +63,16 @@ $push-menu-item-color2: darkred;
   &:before {
     content: "MENU";
   }
+  @media (min-width: 768px) and (max-width: 991px) {
+    &:before {
+      content: " ";
+    }
+  }
+  @media (max-width: 767px) {
+    &:before {
+      content: " ";
+    }
+  }
 }
 
 /* General styles for all menus */
@@ -111,8 +121,9 @@ $push-menu-item-color2: darkred;
 .spmenu-vertical {
   width: 300px;
   height: 100%;
-  top: 72px;
+  top: 0px;
   z-index: 1000;
+  padding-top: 72px;
   a {
 //    border-bottom: 1px solid #258ecd;
     padding: 1em;
