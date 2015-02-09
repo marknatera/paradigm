@@ -2,11 +2,8 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "component";
 @import "flat-ui";
 @import "icon-font";
-@import "animations";
-@import "jquery.bxslider";
 @import "font-awesome";
 @import "header";
 @import "content";
@@ -14,6 +11,7 @@
 @import "contact";
 @import "projects";
 @import "footer";
+@import "animations";
 @import "custom";
 
 #logotop {

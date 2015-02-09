@@ -1,21 +1,21 @@
 
 // All the custom js goes here!!!
 // Scroll to function
-$(document).on('ready page:load', function(){
-  return $("a[href*=#]:not([href=#])").click(function() {
-    var target;
-    if (location.pathname.replace(/^\//, "") === this.pathname.replace(/^\//, "") || location.hostname === this.hostname) {
-      target = $(this.hash);
-      target = (target.length ? target : $("[name=" + this.hash.slice(1) + "]"));
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        $("html,body").animate({
+        $('html,body').animate({
           scrollTop: target.offset().top
-        }, 800);
+        }, 1000);
         return false;
       }
     }
   });
 });
+
 
 // Menu Button
 
@@ -86,35 +86,3 @@ $(document).ready(function() {
 
 
 // Home Page
-
-(function($) {
-  $('.header-16-sub-home').each(function() {
-    if (! isMobile.any() ) {
-      $(this).parallax('50%', 0.3, true);
-    } else {
-      $(this).css('background-attachment', 'initial')
-    }
-  })
-}(jQuery));
-
-(function($) {
-  $('.content-20-home').each(function() {
-    if (! isMobile.any() ) {
-      $(this).parallax('50%', 0.3, true);
-    } else {
-      $(this).css('background-attachment', 'initial')
-    }
-  })
-}(jQuery));
-
-(function($) {
-  $('.content-23').each(function() {
-    if (! isMobile.any() ) {
-      $(this).parallax('50%', 0.3, true);
-    } else {
-      $(this).css('background-attachment', 'initial')
-    }
-  })
-}(jQuery));
-
-// About Page
