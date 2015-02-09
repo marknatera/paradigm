@@ -27,35 +27,3 @@
 //= require startup-kit
 //= require custom
 //= require jquery.fadethis
-
-// Home Page
-
-(function($) {
-  $('.header-16-sub-home').each(function() {
-    if (! isMobile.any() ) {
-      $(this).parallax('50%', 0.3, true);
-    } else {
-      $(this).css('background-attachment', 'initial')
-    }
-  })
-}(jQuery));
-
-(function($) {
-  $('.content-20-home').each(function() {
-    if (! isMobile.any() ) {
-      $(this).parallax('50%', 0.3, true);
-    } else {
-      $(this).css('background-attachment', 'initial')
-    }
-  })
-}(jQuery));
-
-(function($) {
-  $('.content-23-home').each(function() {
-    if (! isMobile.any() ) {
-      $(this).parallax('50%', 0.3, true);
-    } else {
-      $(this).css('background-attachment', 'initial')
-    }
-  })
-}(jQuery));
