@@ -16,6 +16,14 @@ $(function() {
   });
 });
 
+// fadeThis. Look at http://www.jqueryscript.net/demo/jQuery-Plugin-For-Element-Fade-Slide-Effects-As-You-Scroll-FadeThis/ for more info
+
+$(document).ready(function() {
+  $(window).fadeThis({
+    speed: 1000,
+  });
+});
+
 
 // Menu Button
 
@@ -74,15 +82,3 @@ $(document).ready(function() {
         return false;
       });
     });
-
-
-// fadeThis. Look at http://www.jqueryscript.net/demo/jQuery-Plugin-For-Element-Fade-Slide-Effects-As-You-Scroll-FadeThis/ for more info
-
-$(document).ready(function() {
-  $(window).fadeThis({
-    speed: 1000,
-  });
-});
-
-
-// Home Page

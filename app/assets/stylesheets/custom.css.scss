@@ -237,7 +237,8 @@
 
 // Soccer Page
 
-.header-16-sub.soccer{
+.header-16-sub-soccer{
+  @extend .header-16-sub-about;
   .background {
     background-image:url(image-path("soccer-main.jpg")) !important;
     opacity: .9;

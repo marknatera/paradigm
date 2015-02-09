@@ -16,15 +16,13 @@
 
     <div class="spmenu-overlay"></div>
     <div class="page-wrapper spmenu-push">
-    <div class="page-wrapper">
+
 
       <%= yield %>
 
       <footer>
         <%= render 'layouts/footer' %>
       </footer>
-
-    </div>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
@@ -60,6 +58,18 @@
           }
         })
       }(jQuery));
+
+      (function($) {
+        $('.v-center-soccer').each(function() {
+          if (! isMobile.any() ) {
+            $(this).parallax('50%', 0.3, true);
+          } else {
+            $(this).css('background-attachment', 'initial')
+          }
+        })
+      }(jQuery));
+
+
     </script>
 
   </body>
