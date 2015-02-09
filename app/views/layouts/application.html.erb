@@ -7,22 +7,20 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
+    <div class="page-wrapper">
 
-    <%= render 'layouts/header' %>
-
-    <nav class="spmenu spmenu-vertical spmenu-right" id="spmenu-s2">
-      <%= render 'layouts/navlinks' %>
-    </nav>
-
-    <div class="spmenu-overlay"></div>
-    <div class="page-wrapper spmenu-push">
-
-
-      <%= yield %>
-
+      <%= render 'layouts/header' %>
+      <nav class="spmenu spmenu-vertical spmenu-right" id="spmenu-s2">
+        <%= render 'layouts/navlinks' %>
+      </nav>
+      <div class="spmenu-overlay"></div>
+      <div class="spmenu-push">
+        <%= yield %>
       <footer>
         <%= render 'layouts/footer' %>
       </footer>
+      </div>
+    </div>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
@@ -69,8 +67,6 @@
         })
       }(jQuery));
 
-
     </script>
-
   </body>
 </html>
