@@ -56,25 +56,19 @@
 </section>
 
 <section class="content-32-home">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-10 col-sm-offset-1">
+      <div class="col-sm-12">
         <h1 class="top">NEW 2015 FAMILY MEMBERS</h1>
+        <div class="row">
+          <% @clients.each do |client| %>
+            <div class="col-md-4" style="padding-left: 0px;padding-right: 0px;">
+                <%= link_to image_tag(client.picture_url), client, class: 'img-responsive' if client.picture? %>
+            </div>
+          <% end %>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="fluid-container">
-      <div class="row">
-        <div class="col-xs-6 col-md-4" style="padding-left: 0px;padding-right: 0px;">
-          <%= image_tag 'family1.jpg', class: 'img-responsive' %>
-        </div>
-        <div class="col-xs-6 col-md-4" style="padding-left: 0px;padding-right: 0px;">
-          <%= image_tag 'family2.jpg', class: 'img-responsive' %>
-        </div>
-        <div class="col-xs-6 col-md-4" style="padding-left: 0px;padding-right: 0px;">
-          <%= image_tag 'family3.jpg', class: 'img-responsive' %>
-        </div>
-      </div>
   </div>
   <div class="container">
     <div class="row">
