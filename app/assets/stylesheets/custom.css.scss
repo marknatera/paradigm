@@ -89,7 +89,6 @@
     font-weight:300;
     padding-bottom: 45px;
     font-size: 20px;
-    text-decoration: underline;
   }
 }
 
@@ -261,10 +260,19 @@
 
 .content-32-soccer {
   @extend .content-32;
-  background: #fafafa !important;
+  background: #fafafa;
+  padding-top: 160px;
+  padding-bottom: 175px;
+  h1{
+    font-weight: 700;
+    text-align: left;
+    font-size: 30px;
+    color: #000000;
+  }
   p {
     color: #838383;
-    font-size: larger;
+    font-family: 'Lato', sans-serif;
+    font-weight:300;
     text-align: left;
   }
   h3 {
