@@ -29,6 +29,8 @@ gem 'carrierwave'
 gem 'mini_magick', '3.8.0'
 gem 'figaro'
 gem 'therubyracer', '~> 0.12.1'
+gem 'activeadmin', github: 'activeadmin', branch: 'master'
+gem 'ransack', github: 'activerecord-hackery/ransack', branch: 'master'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

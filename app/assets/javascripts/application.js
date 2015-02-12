@@ -14,8 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= require custom
-//= require jquery.scrollTo-1.4.3.1-min
 //= require bootstrap-sprockets
 //= require bootstrap.min
 //= require modernizr.custom
@@ -27,5 +25,6 @@
 //= require jquery.backgroundvideo.min
 //= require froogaloop.min
 //= require masonry.pkgd.min
-//= require startup-kit.js
 //= require jquery.fadethis
+//= require startup-kit.js
+//= require custom
